@@ -1,0 +1,365 @@
+@import "../scss/bootstrap";
+
+/* src/styles/RegisterPage.css */
+/* src/styles/RegisterPage.css */
+
+.register-page,
+.login-page {
+  display: flex;
+  height: 100vh;
+}
+
+.fixed-image {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100vh;
+  background: #f0f0f0; /* Optional background color */
+}
+
+.fixed-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  width: 50%;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form,
+.login-form {
+  font-family: jost;
+  width: 100%;
+  max-width: 500px; /* Adjust max width as needed */
+
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #131118;
+  border: none;
+  transition: 0.5s;
+}
+.submit-button:hover {
+  background-color: #504f54;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .fixed-image {
+    width: 100%;
+    height: 50%;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+}
+
+.auth-logo {
+  position: absolute;
+  //width: 2rem!important; /* Correct width */
+  // height: 12px; /* Correct height */
+  top: -7px; /* Position from the top */
+  left: 7px; /* Position from the left */
+  padding: 10.9px 10px 7.96px 0px; /* Adjust padding */
+  gap: 0px;
+  opacity: 1; /* Set opacity to 1 to make it visible */
+  z-index: 10;
+}
+
+.logo {
+  object-fit: contain;
+
+  /* Ensures the logo maintains aspect ratio */
+}
+
+//forgot
+.forgot-password-page {
+  display: flex;
+  height: 100vh;
+}
+
+.forgot-password-form {
+  font-family: jost;
+  width: 100%;
+  max-width: 500px; /* Adjust max width as needed */
+
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .fixed-image {
+    width: 100%;
+    height: 50%;
+  }
+
+  .form-container {
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+}
+
+//links
+
+// Login Page Styles
+// Login Page Styles
+.login-page,
+.register-form {
+  .auth-button {
+    width: 100%;
+    background-color: #131118 !important;
+    border: none;
+    transition: 0.5s;
+  }
+  .auth-button:hover {
+    background-color: #504f54;
+  }
+
+  .google-signin-button {
+    margin-top: 10px; // Keep spacing consistent
+    background-color: transparent !important;
+    border: 1px solid #131118;
+    color: #131118;
+    transition: 0.5s;
+  }
+  .google-signin-button:hover {
+    background-color: rgb(79, 76, 76) !important;
+  }
+
+  .auth-links {
+    text-align: center;
+    margin-top: 20px;
+    a {
+      color: black; // Make the link text black
+      font-weight: 500; // Same font weight as your design
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+//back
+
+.back {
+  text-decoration: none !important;
+  color: #131118 !important;
+  margin-left: -10px;
+  margin-top: -2px;
+}
+
+//addtocart
+.cart-section {
+  //  background-color: #f8f9fa;
+  padding: 20px;
+
+  .text-large {
+    font-size: 1.25rem;
+  }
+
+  .summary-card {
+    position: sticky;
+    bottom: 0;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    //background-color: #fff;
+  }
+
+  .checkout-btn {
+    background-color: #131313;
+    border-color: #4e5052;
+    transition: background-color 0.3s, border-color 0.3s;
+    &:hover {
+      background-color: #131313;
+      //border-color: #6c6e70;
+    }
+  }
+
+  table {
+    // background-color: #fff;
+    border-radius: 0.5rem;
+    overflow: hidden;
+
+    thead {
+      background-color: #131313;
+      //color: #fff;
+    }
+
+    tbody tr:nth-child(odd) {
+      //background-color: #f2f2f2;
+    }
+
+    tbody tr:hover {
+      // background-color: #e6e6e6;
+    }
+  }
+
+  .form-control {
+    border-radius: 0.25rem;
+    border-color: #131313;
+  }
+}
+@media (max-width: 768px) {
+  .summary-card {
+    width: 90%;
+  }
+
+  .text-large {
+    font-size: 1.2rem; // Adjust size for smaller screens
+  }
+
+  .btn {
+    font-size: 0.875rem; // Adjust button font size for smaller screens
+  }
+}
+
+//ckeckout
+.checkout-page {
+  .checkout-form,
+  .order-summary {
+    width: 500px; // Ensure both sections take up the full column width
+    margin: 0 auto;
+  }
+
+  .checkout-form,
+  .order-summary {
+    padding: 1rem; // Add padding for better spacing
+    background: #f8f9fa; // Add a background for visual separation
+    border-radius: 8px; // Rounded corners for aesthetic improvement
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  }
+
+  .checkout-form {
+    .form-group {
+      margin-bottom: 1rem;
+
+      label {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        .form-icon {
+          margin-right: 0.5rem;
+        }
+      }
+
+      input,
+      select {
+        width: 100%;
+        padding: 0.75rem; // Adjust padding for better usability
+        font-size: 1rem;
+        border-radius: 4px; // Rounded input corners
+        border: 1px solid #ced4da; // Border for input fields
+      }
+    }
+
+    .btn {
+      font-size: 1.1rem; // Slightly larger font size for better readability
+      padding: 0.75rem; // Add padding to the button
+      border-radius: 4px; // Rounded button corners
+    }
+  }
+
+  .order-summary {
+    .total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1.5rem;
+
+      .total-price {
+        font-weight: bold;
+      }
+    }
+
+    .btn {
+      font-size: 1.1rem; // Slightly larger font size for better readability
+      padding: 0.75rem; // Add padding to the button
+      border-radius: 4px; // Rounded button corners
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .row {
+      .col-lg-6 {
+        width: 100%; // Ensure each column takes full width on tablets
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    .row {
+      .col-lg-6 {
+        flex: 0 0 50%; // Set width to 50% on large screens
+        max-width: 50%;
+      }
+    }
+  }
+}
+//contact
+.contact-page {
+  padding: 50px;
+  background-color: #f9f9f9;
+  margin-top: 5rem;
+  //border: 1px solid #131313; // Add border to the container
+ // border-radius: 10px; // Rounded corners
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #131313; // Title color
+  }
+
+  .ant-form-item-label > label {
+    font-weight: 600;
+    color: #131313; // Label color
+  }
+
+  .ant-input, .ant-input-textarea {
+    border-radius: 5px;
+    border: 1px solid #131313; // Input border color
+    &:hover,
+    &:focus {
+      border-color: #939393; // Focused border color
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); // Shadow on focus
+    }
+  }
+
+  .ant-btn {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #131313; // Button background color
+    color: #ffffff; // Button text color
+    border: none;
+
+    &:hover {
+      background-color: #404140; // Button hover color
+      color: #ffffff; // Text color on hover
+    }
+  }
+}
